@@ -50,9 +50,8 @@ const Pokedex = () => {
     <section>
       <Header />
       <main className="grid gap-2">
-        <p className="font-semibold p-2">
-          <b className="text-red-500 p-2">welcome {trainerName}</b>, here can
-          find you favorite pokemon
+        <p className=" text-center font-semibold text-[40px] p-2 text-green-500 font-sans">
+          Bienvenido {trainerName}, he aquí tu pokemon favorito
         </p>
         <form className="flex justify-between p-2 " onSubmit={handleSubmit}>
           <div className=" absolute  left-2">
@@ -60,18 +59,18 @@ const Pokedex = () => {
               name="pokemonName"
               placeholder="search pokemon.."
               type="text"
-              className="p-3 border rounded-md outline-none"
+              className="p-3 border-purple-500 border rounded-md outline-none"
             />
-            <button className="bg-red-500 text-white p-3 font-semibold rounded-md">
+            <button className="bg-purple-500 text-white p-3 font-semibold rounded-md">
               search
             </button>
           </div>
           <select
-            className="p-3 rounded-md bg-red-500 text-white outline-none absolute right-20"
+            className="p-3 rounded-md bg-purple-500 text-white outline-none absolute right-20"
             onChange={handleChangeType}
           >
             <option value="https://pokeapi.co/api/v2/pokemon?limit=1292">
-              all pokemos
+              Todos los pokemones
             </option>
             {types.map((type) => (
               <option value={type.url} className="capitalize" key={type.name}>

@@ -32,26 +32,29 @@ const PokemonDetail = () => {
           <img
             src={pokemonInfo?.sprites.other["official-artwork"].front_default}
             alt=""
-            className="absolute bottom-0 translate-x-[80%]  w-[200px]"
+            className="absolute bottom-0 translate-x-[80%]  w-[100px]"
           />
         </header>
-        <span className="text-green-900 border text-[20px] font-semibold ">
-          # {pokemonInfo?.id}
-        </span>
-        <h3 className="text-green-800  text-[30px] font-semibold capitalize">
-          {pokemonInfo?.name}
-        </h3>
-        <div className="grid grid-cols-2 gap-2 p-2 items-center font-semibold">
-          <div>
+       
+        <div className="flex gap-10 justify-between">
+          <span className="text-green-900 border text-[20px] font-semibold ">
+            # {pokemonInfo?.id}
+          </span>
+          <h3 className="text-green-800  text-[30px] font-semibold capitalize">
+            {pokemonInfo?.name}
+          </h3>
+          <div className="flex flex-col gap-2 p-2">
             <div>
-              <h5>weigth</h5>
-              <span>{pokemonInfo?.weight}</span>
+              <div>
+                <h5>weigth</h5>
+                <span>{pokemonInfo?.weight}</span>
+              </div>
             </div>
-          </div>
-          <div className="flex">
-            <div>
-              <h5>heith</h5>
-              <span>{pokemonInfo?.height}</span>
+            <div className="flex">
+              <div>
+                <h5>heigth</h5>
+                <span>{pokemonInfo?.height}</span>
+              </div>
             </div>
           </div>
         </div>

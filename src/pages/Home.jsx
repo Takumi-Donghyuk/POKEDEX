@@ -16,13 +16,13 @@ const Home = () => {
     <section className="grid grid-rows-[1fr_auto] h-screen overflow-hidden gap-3 ">
       <div className="text-center justify-self-center self-center ">
         <main>
-          <header className="p-11">
-            <img src="/images/pokedex.png" alt="" />
+          <header className="p-11 flex justify-center items-center">
+            <img src="/images/pokedex.png" className="w-50" alt="" />
           </header>
-          <h1 className="text-red-600 text-[30px] font-semibold">
-            Hello trainer!
+          <h1 className="text-green-700 text-[50px] font-semibold font-mono">
+            ¡(Hello, 안녕하세요, こんにちは) coach !
           </h1>
-          <p className="font-semibold ">write your name for start..</p>
+          <p className="font-semibold font-serif text-orange-600 ">ESCRIBE TU NOMBRE</p>
           <form
             className="bg-white flex  justify-center h-[570]items-center p-6"
             onSubmit={handleSubmit}
@@ -33,10 +33,10 @@ const Home = () => {
               type="text"
               autoComplete="off"
               required
-              className="border outline-none rounded-md"
+              className="border border-purple-500 outline-none rounded-md p-3"
             />
             <button
-              className="bg-red-500 rounded p-3 text-white font-semibold"
+              className="bg-purple-500 p-3 text-white font-semibold"
               type="submit"
             >
               Star
